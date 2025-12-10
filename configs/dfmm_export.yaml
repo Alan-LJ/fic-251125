@@ -1,0 +1,23 @@
+# DF-MM 批量导出默认配置
+prompts:
+  - neckline
+  - sleeve
+  - waist
+  - pattern
+export:
+  image_root: "src/datasets/DeepFashion-MultiModal/images/images"
+  annotation: "src/datasets/DeepFashion-MultiModal/captions.json"
+  output: "outputs/dfmm_llava.jsonl"
+  cache_dir: "outputs/cache/dino"
+  resume: true
+  max_samples: null  # 为 null 时处理全量
+logging:
+  progress_every: 50
+  failure_log: "outputs/dfmm_llava.fail.jsonl"
+  stats: "outputs/dfmm_llava.stats.json"
+quality_gate:
+  df2_root: "src/datasets/DeepFashion2"
+  df2_mode: "val"
+  max_reference_samples: 1500
+  min_overlap: 1
+  drop_filtered: false
