@@ -1,0 +1,32 @@
+# Python cache and virtual envs
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+*.venv/
+venv/
+ENV/
+.FIC/
+
+# VS Code
+.vscode/
+
+# Logs / temp
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Datasets
+src/datasets/DeepFashion2/
+src/datasets/DeepFashion-MultiModal/
+
+# Hugging Face cache (if local copy)
+.huggingface/
+*/.cache/
+
+# Checkpoints / outputs
+outputs/
+checkpoints/
